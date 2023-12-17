@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"),
+    url("@/statics/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Light"),
+    url("@/statics/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium"),
+    url("@/statics/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"),
+    url("@/statics/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dana";
+  src: local("Dana Regular"),
+    url("@/statics/fonts/Dana/dana-fanum-Regular.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dana";
+  src: local("Dana Light"),
+    url("@/statics/fonts/Dana/dana-fanum-Regular.woff") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dana";
+  src: local("Dana Medium"),
+    url("@/statics/fonts/Dana/dana-fanum-Medium.woff") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dana";
+  src: local("Dana Bold"),
+    url("@/statics/fonts/Dana/dana-fanum-Bold.woff") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+$font-family: "Montserrat";
+
+// .v-application.v-locale--is-rtl {
+//   font-family: "Dana", sans-serif !important;
+// }
+
+.v-application {
+  font-family: $font-family, "Dana", sans-serif !important;
+  letter-spacing: -0.4px !important;
+  [class*="text-"] {
+    letter-spacing: -0.4px !important;
+    font-family: $font-family, "Dana", sans-serif !important;
+  }
+}
+.v-card {
+  letter-spacing: -0.4px !important;
+  .v-card-text {
+    letter-spacing: -0.4px !important;
+  }
+}
+
+.v-label,
+.v-card-title,
+.v-card-subtitle {
+  white-space: pre-line !important;
+}

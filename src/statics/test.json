@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "question": "Are you seeking services as an individual or a company?",
+    "options": [
+      { "key": "Individual", "value": 1 },
+      { "key": "Company", "value": 2 }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Are you looking for a translator or a business partner?",
+    "options": [
+      { "key": "I am a translator", "value": 3 },
+      { "key": "I want a translator", "value": 4 }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What type of translation services are needed?",
+    "options": [
+      {
+        "key": "General (daily, friendly, tourism, events, celebrations)",
+        "value": 6
+      },
+      {
+        "key": "Business (trade, import, export, exhibitions, business meetings, contracts)",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Preferred gender of the translator?",
+    "options": [
+      { "key": "Male", "value": 8 },
+      { "key": "Female", "value": 9 },
+      { "key": "No Preference", "value": 10 }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Please provide more details about the required translation services.",
+    "input_type": "textarea"
+  },
+  {
+    "id": 6,
+    "question": "How many days are needed for the service?", // hours, days, weeks, year
+    "input_type": "number"
+  },
+  {
+    "id": 7,
+    "question": "What is the date and time for the service?",
+    "input_type": "datetime"
+  },
+  {
+    "id": 8,
+    "question": "Start time of the service?",
+    "input_type": "time"
+  },
+  {
+    "id": 9,
+    "question": "End time of the service?",
+    "input_type": "time"
+  },
+  {
+    "id": 10,
+    "question": "Please provide your company name, website, email, and contact methods.",
+    "input_type": "text"
+  },
+  {
+    "id": 11,
+    "question": "Have you already contacted the target company? If yes, what is their name, website, and contact methods? If no, do you want us to find and connect you to a company?",
+    "input_type": "text"
+  },
+  {
+    "id": 12,
+    "question": "Work Location?",
+    "input_type": "text"
+  },
+  {
+    "id": 13,
+    "question": "Estimated budget range?",
+    "input_type": "number"
+  },
+  {
+    "id": 14,
+    "question": "Provide any files or catalogues to describe your company's services.",
+    "input_type": "file"
+  }
+]

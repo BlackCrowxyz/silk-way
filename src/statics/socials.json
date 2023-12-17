@@ -1,0 +1,27 @@
+[
+  {
+    "text": "LinkedIn",
+    "icon": "mdi-linkedin",
+    "to": "https://linkedin.com/BlulexiAI"
+  },
+  {
+    "text": "Twitter",
+    "icon": "mdi-twitter",
+    "to": "https://x.com/BlulexiAI"
+  },
+  {
+    "text": "Instagram",
+    "icon": "mdi-instagram",
+    "to": "https://instagram.com/BlulexiAI"
+  },
+  {
+    "text": "Facebook",
+    "icon": "mdi-facebook",
+    "to": "https://fb.com/BlulexiAI"
+  },
+  {
+    "text": "Telegram",
+    "icon": "mdi-telegram",
+    "to": "https://t.me/BlulexiAI"
+  }
+]
