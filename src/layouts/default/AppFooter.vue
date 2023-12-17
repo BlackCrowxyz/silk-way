@@ -9,7 +9,7 @@
   >
     <div class="d-flex flex-column flex-sm-row w-100 align-center px-4">
       <strong class="text-body-2 pb-2 pb-sm-0 order-1 order-sm-0">
-        © {{ new Date().getFullYear() }} BluLexi Inc.
+        © {{ new Date().getFullYear() }} Goodrabi Inc.
         <v-btn
           variant="text"
           size="s"

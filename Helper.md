@@ -13,7 +13,7 @@
       gtag("config", "G-XXZYMR71CZ");
     </script> -->
 
-    <!-- Hotjar Tracking Code for https://www.blulexi.com/ -->
+    <!-- Hotjar Tracking Code for https://www.Goodrabi.com/ -->
     <!-- <script>
       (function (h, o, t, j, a, r) {
         h.hj =

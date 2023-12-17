@@ -6,7 +6,7 @@
 
     <router-link :to="{ name: 'Home' }" class="px-4 text-text text-decoration-none">
       <v-app-bar-title class="text-white">
-        <span> BluLexi </span>
+        <span> Goodrabi </span>
         <small> ( {{ $t("navigation.beta") }} ) </small>
         <v-icon icon="mdi-alpha-b-box" class="pb-1" />
       </v-app-bar-title>
@@ -94,7 +94,7 @@
   </v-app-bar>
 
   <v-navigation-drawer v-model="drawer" temporary style="height: 100%; z-index: 2008">
-    <v-list-item :prepend-avatar="logo" title="Blulexi" class="my-1 py-1"></v-list-item>
+    <v-list-item :prepend-avatar="logo" title="Goodrabi" class="my-1 py-1"></v-list-item>
 
     <v-divider></v-divider>
 

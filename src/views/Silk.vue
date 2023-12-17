@@ -1,7 +1,10 @@
 <template>
-  <v-container class="pa-16 mt-16">
+  <v-container class="pa-16">
     <!-- {{ user }} -->
-    <v-stepper :items="[$t('silk.steps[0]'), $t('silk.steps[1]'), $t('silk.steps[2]')]">
+    <v-stepper
+      v-model="step"
+      :items="[$t('silk.steps[0]'), $t('silk.steps[1]'), $t('silk.steps[2]')]"
+    >
       <template v-slot:item.1>
         <v-card flat>
           <v-card-text>
@@ -301,6 +304,21 @@
           <v-card-text></v-card-text
         ></v-card>
       </template> -->
+
+      <!-- <v-stepper-actions @click:next="nextStep(1)" @click:prev="nextStep(-1)">
+      </v-stepper-actions> -->
+
+      <template #next>
+        <v-btn v-if="step != 3" @click="nextStep(1)">{{
+          $t("$vuetify.stepper.next")
+        }}</v-btn>
+        <v-btn v-else :disabled="false" @click="router.push({ name: 'profiles' })">{{
+          $t("$vuetify.stepper.done")
+        }}</v-btn>
+      </template>
+      <template #prev>
+        <v-btn @click="nextStep(-1)">{{ $t("$vuetify.stepper.prev") }}</v-btn>
+      </template>
     </v-stepper>
   </v-container>
 </template>
@@ -308,6 +326,15 @@
 <script setup lang="ts">
 import type { Ref } from "vue";
 import { ref, reactive } from "vue";
+
+import { useRouter } from "vue-router";
+const router = useRouter();
+
+const step = ref(0);
+
+const nextStep = (s: number) => {
+  if (0 < step.value + s || step.value + s < 4) step.value += s;
+};
 
 type Option = { key: string; value: number };
 type Item = {

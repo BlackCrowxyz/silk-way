@@ -63,7 +63,7 @@
 
             <h2 class="text-h6 mt-4">Update: Nov 2023, v0.0.1</h2>
             <ul>
-              <li>Blulexi.com lunch</li>
+              <li>Goodrabi.com lunch</li>
               <li>Accurate Ai based, IELTS Writing band score assessment</li>
             </ul>
           </div>

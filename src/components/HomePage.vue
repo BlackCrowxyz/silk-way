@@ -41,7 +41,7 @@
       </v-col>
     </v-row>
 
-    <v-card variant="flat" class="my-6 my-sm-12 pa-6 pa-sm-12 rounded-xl">
+    <!-- <v-card variant="flat" class="my-6 my-sm-12 pa-6 pa-sm-12 rounded-xl">
       <v-row>
         <v-col cols="12">
           <h3 class="text-h5">{{ $t("landing.benefitsTitle") }}</h3>
@@ -269,9 +269,9 @@
           </v-hover>
         </v-col>
       </v-row>
-    </v-card>
+    </v-card> -->
 
-    <v-row class="my-16">
+    <!-- <v-row class="my-16">
       <v-col cols="12" class="text-center">
         <v-btn
           class="text-none"
@@ -284,17 +284,17 @@
           {{ $t("landing.startFreeCreditsButton") }}
         </v-btn>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <!-- Testimonials Section -->
 
     <!-- Pricing Table -->
 
     <!-- FAQ Section -->
-    <v-card variant="flat" class="my-6 my-sm-12 pa-6 pa-sm-12 rounded-xl">
+    <!-- <v-card variant="flat" class="my-6 my-sm-12 pa-6 pa-sm-12 rounded-xl">
       <h3 class="text-h5 mb-4">{{ $t("landing.faqTitle") }}</h3>
       <FAQ class="mb" />
-    </v-card>
+    </v-card> -->
 
     <!-- Trust Badges Section -->
   </v-container>
