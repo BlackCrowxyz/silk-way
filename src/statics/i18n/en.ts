@@ -207,103 +207,145 @@ export default {
     }
   },
   "silk": {
-    "steps": ["Step 1", "Step 2", "Step 3"],
+    "steps": ["Step 1", "Step 2", "Step 3", "Final Step"],
     "comingSoon": "Coming soon...",
-    "title1": "Tell us more about your Company",
-    "title2": "Questions about translator",
-    "title3": "  Tell us more about the time and location of work",
-    "questions": [
-      {
-        "question": "Are you seeking services as an individual or a company?",
-        "options": [
-          { "key": "Individual", "value": 1 },
-          { "key": "Company", "value": 2 }
-        ]
-      },
-      {
-        "question": "Are you looking for a translator or a business partner?",
-        "options": [
-          { "key": "I am a translator", "value": 3 },
-          { "key": "I want a translator", "value": 4 }
-        ]
-      },
-      {
-        "question": "What type of translation services are needed?",
-        "options": [
-          {
-            "key": "General (daily, friendly, tourism, events, celebrations)",
-            "value": 6
-          },
-          {
-            "key": "Business (trade, import, export, exhibitions, business meetings, contracts)",
-            "value": 7
-          }
-        ]
-      },
-      {
-        "question": "Preferred gender of the translator?",
-        "options": [
-          { "key": "Male", "value": 8 },
-          { "key": "Female", "value": 9 },
-          { "key": "No Preference", "value": 10 }
-        ]
-      },
-      {
-        "question": "Please provide more details about the required translation services.",
-        "input_type": "textarea"
-      },
-      {
-        "question": "How many days are needed for the service?",
-        "input_type": "number"
-      },
-      {
-        "question": "What is the date and time for the service?",
-        "input_type": "datetime"
-      },
-      {
-        "question": "Start time of the service?",
-        "input_type": "time"
-      },
-      {
-        "question": "End time of the service?",
-        "input_type": "time"
-      },
-      {
-        "question": "Please provide your company name.",
-        "input_type": "text"
-      },
-      {
-        "question": "Have you already contacted the target company? If yes, what is their name, website, and contact methods? If no, do you want us to find and connect you to a company?",
-        "input_type": "textarea"
-      },
-      {
-        "question": "Work Location?",
-        "input_type": "text"
-      },
-      {
-        "question": "Estimated budget range?",
-        "input_type": "number"
-      },
-      {
-        "question": "Provide any files or catalogues to describe your company's services.",
-        "input_type": "file"
-      },
-      {
-        "question": "What is your gender",
-        "options": [
-          { "key": "Male", "value": 11 },
-          { "key": "Female", "value": 12 },
-          { "key": "No Preference", "value": 13 }
-        ]
-      },
-      {
-        "question": "Provide services you do,",
-        "input_type": "text"
-      },
-      {
-        "question": "Please provide your company website",
-        "input_type": "text"
-      }
-    ]
+    "title0": "Translator or Consultant",
+    "title1": "Explain more about your company",
+    "title2": "Questions about the translator",
+    "title3": "Explain more about the time and place of work",
+    "title4": "Explain more yourself",
+    "step1": {
+      "questions": [
+        {
+          "question": "Select the type of your order",
+          "options": [
+            { "key": "I am looking for a translator", "value": 1 },
+            { "key": "I am looking for a business partner (consulting + translator + business partner)", "value": 2 }
+          ]
+        },
+      ]
+    },
+    "step2": {
+      "questions": [
+        {
+          "question": "Select the main field of the subject matter of the order",
+          "options": [
+            {
+              "key": "General content",
+              "value": 6
+            },
+            {
+              "key": "E-commerce and information technology",
+              "value": 7
+            },
+            {
+              "key": "Trade and commerce",
+              "value": 8
+            },
+            {
+              "key": "Travel and tourism",
+              "value": 9
+            },
+            {
+              "key": "Commerce and advertising",
+              "value": 10
+            },
+            {
+              "key": "Games, recreation, and entertainment",
+              "value": 11
+            },
+            {
+              "key": "Food, culture, and art",
+              "value": 12
+            },
+            {
+              "key": "Other",
+              "value": 13
+            },
+          ]
+        },
+        {
+          "question": "How does the translator work?",
+          "options": [
+            { "key": "Simultaneous conference translator, etc.", "value": 14 },
+            { "key": "Exhibition visitor guide, etc.", "value": 15 },
+            { "key": "In-person meeting translator", "value": 16 },
+            { "key": "Guest accompaniment translator", "value": 17 },
+            { "key": "International phone communication", "value": 18 },
+            { "key": "Other", "value": 19 }
+          ]
+        },
+        // next
+        {
+          "question": "The purpose of communicating with the business partner",
+          "options": [
+            { "key": "Exports", "value": 20 },
+            { "key": "Imports", "value": 21 },
+          ]
+        },
+        {
+          "question": "Select your business field",
+          "options": [
+            { "key": "Electronic equipment", "value": 20 },
+            { "key": "Plasticware", "value": 21 },
+            { "key": "Food industry", "value": 22 },
+            { "key": "Automobile and machine parts", "value": 23 },
+            { "key": "Citrus fruits", "value": 24 },
+            { "key": "Carpets", "value": 25 },
+            { "key": "Other", "value": 26 },
+          ]
+        }
+      ]
+    },
+    "step3": {
+      questions: [
+        {
+          "question": "Translator dispatch date",
+          "input_type": "date"
+        },
+        {
+          "question": "Start time of work",
+          "input_type": "time"
+        },
+        {
+          "question": "End time of work",
+          "input_type": "time"
+        },
+        {
+          "question": "Translator's address for reference",
+          "input_type": "text"
+        },
+
+        // next
+        {
+          "question": "Do you have a specific company in mind for communication? Write the related company's information (name, website, contact with the company)",
+          "input_type": "textarea"
+        },
+        {
+          "question": "I would like you to contact the company",
+          "input_type": "checkbox"
+        },
+      ]
+    },
+    "step4": {
+      questions: [
+        {
+          "question": "Upload translator guide file",
+          "input_type": "file"
+        },
+        {
+          "question": "First and last name",
+          "input_type": "text"
+        },
+        {
+          "question": "Email",
+          "input_type": "email"
+        },
+        {
+          "question": "Contact number",
+          "input_type": "phone"
+        },
+      ]
+    },
   }
 }
